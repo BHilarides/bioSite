@@ -1,0 +1,22 @@
+/*
+Author: Ben Hilarides
+Date: 2/8/25
+File name: styles.css
+*/
+
+/* CSS Reset*/
+body, header, nav, main, footer, img, h1  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #000080;
+}
+
+/* Style rule for Images */
+img {
+  max-width: 100%;
+  display: block;
+}
