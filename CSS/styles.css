@@ -11,12 +11,109 @@ body, header, nav, main, footer, img, h1  {
   border: 0;
 }
 
+/*Style rules for body and images*/
 body {
-  background-color: #000080;
+  background-color: #111180;
 }
 
 /* Style rule for Images */
 img {
-  max-width: 100%;
+  width: 250px;
   display: block;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.image-column {
+  float: left;
+  width: 150px; /* Adjust as needed */
+  margin-right: 20px;
+}
+
+.image-column img {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.text-column {
+  overflow: hidden; /* Prevents float issues */
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Optional background */
+}
+
+#hero img {
+  max-width: 100%; /* Keeps image responsive */
+  height: auto;
+}
+
+/* Style rule for header content*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: #970000;
+  height: 50px;
+}
+
+header h1 {
+  padding: 2%;
+}
+
+/*Style rules for navigation*/
+nav  {
+  background-color: white;
+  padding: 1%;
+  margin-bottom: 1%
+}
+
+nav ul  {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li  {
+  display: block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+  border-top: .5px solid #f6eee4;
+}
+
+nav li:first-child  {
+  border-top:none;
+}
+
+nav li a  {
+  display: block;
+  color: #f6eee4;
+  text-align: center;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+/* Style rules for main content*/
+main {
+  display: block;
+  background-color: white;
+  margin: 2em auto;
+  float: right;
+}
+
+/*Style rules for footer content*/
+footer  {
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  text-align: center;
+  padding: 1% 0%;
+  bottom: 0;
 }
