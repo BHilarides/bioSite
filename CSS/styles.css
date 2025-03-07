@@ -38,20 +38,10 @@ img {
   display: none;
 }
 
-.image-column {
-  float: left;
-  width: 350px; /* Adjust as needed */
-  margin-right: 20px;
-}
-
-.image-column img {
-  display: block;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.text-column {
-  overflow: hidden;
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
 }
 
 #hero {
