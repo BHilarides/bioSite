@@ -38,12 +38,6 @@ img {
   display: none;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-}
-
 #hero {
   display: flex;
   justify-content: center;
@@ -117,4 +111,63 @@ footer  {
   text-align: center;
   padding: 1% 0%;
   bottom: 0;
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width:620px), print {
+
+  /*Tablet Viewport: Show tab-desk class and hide mobile class*/
+
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+
+
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1000px), print {
+  /*Desktop Viewport: Show desktop class and hide mobile-tablet class*/
+
+  .mobile-tablet {
+    display: none;
+  }
+
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;;
+  }
+
+  nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+  }
+
+  body {
+    background-color: blue;
+    color: black;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+
 }
