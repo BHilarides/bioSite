@@ -27,6 +27,17 @@ img {
   border-radius: 5px;
 }
 
+/*Style rules for mobile viewport*/
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile, .mobile-tablet {
+  display: block;
+}
+
+.tab-desk, .desktop {
+  display: none;
+}
+
 .image-column {
   float: left;
   width: 350px; /* Adjust as needed */
@@ -40,25 +51,25 @@ img {
 }
 
 .text-column {
-  overflow: hidden; /* Prevents float issues */
+  overflow: hidden;
 }
 
 #hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  background-color: #f4f4f4; /* Optional background */
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
 #hero img {
-  max-width: 100%; /* Keeps image responsive */
+  max-width: 100%;
   height: auto;
 }
 
 /* Style rule for header content*/
 header {
-  position: sticky;
+  position: top;
   top: 0;
   background-color: #970000;
   height: 50px;
@@ -94,7 +105,7 @@ nav li:first-child  {
 
 nav li a  {
   display: block;
-  color: #f6eee4;
+  color: black;
   text-align: center;
   padding: 0.5em 2em;
   text-decoration: none;
