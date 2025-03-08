@@ -20,7 +20,7 @@ body {
 
 /* Style rule for Images */
 img {
-  max-width: 100%;
+  max-width: 300px;
   height: auto;
   display: block;
   border-radius: 5px 20px 5px 5px;
