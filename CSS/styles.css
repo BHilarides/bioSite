@@ -1,6 +1,6 @@
 /*
 Author: Ben Hilarides
-Date: 3.7.25
+Date: 3.8.25
 File name: styles.css
 */
 
@@ -43,6 +43,7 @@ img {
   align-items: center;
   height: 100vh;
   background-color: #f4f4f4;
+  max-width: 500px;
 }
 
 #hero img {
@@ -75,6 +76,7 @@ header {
   width: 100%;
   background-color: #970000;
   height: 50px;
+  padding: 5px 0;
 }
 
 header h1 {
@@ -85,7 +87,8 @@ header h1 {
 nav  {
   background-color: white;
   padding: 1%;
-  margin-bottom: 1%
+  margin-bottom: 1%;
+  margin-top: 20px;
 }
 
 nav ul  {
@@ -109,9 +112,10 @@ nav li a  {
   display: block;
   color: black;
   text-align: center;
-  padding: 0.5em 1.5em;
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
+  border-bottom: 1 px solid #ccc;
 }
 
 nav li a:hover {
