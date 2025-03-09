@@ -4,15 +4,15 @@ Date: 3.8.25
 File name: styles.css
 */
 
-/* CSS Reset*/
-body, header, nav, main, footer, img, h1  {
+/* CSS Reset */
+body, header, nav, main, footer, img, aside, figure, figcaption, h1, h2 {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
 }
 
-/*Style rules for body and images*/
+/* Style rules for body and images */
 body {
   background-color: #111180;
   color: black;
@@ -26,9 +26,9 @@ img {
   border-radius: 5px 20px 5px 5px;
 }
 
-/*Style rules for mobile viewport*/
+/* Style rules for mobile viewport */
 
-/*Style rules to show mobile class and hide tab-desk class*/
+/* Style rules to show mobile class and hide tab-desk class */
 .mobile, .mobile-tablet {
   display: block;
 }
@@ -49,6 +49,7 @@ img {
 #hero img {
   max-width: 100%;
   height: auto;
+  padding: 2%;
 }
 
 .aside {
@@ -69,7 +70,7 @@ img {
   border-top: 4px solid #2a1f14;
 }
 
-/* Style rule for header content*/
+/* Style rule for header content */
 header {
   position: fixed;
   top: 0;
@@ -77,18 +78,20 @@ header {
   background-color: #970000;
   height: 50px;
   padding: 5px 0;
+  text-align: center;
 }
 
 header h1 {
-  padding: 2%;
+  padding: 1%;
 }
 
-/*Style rules for navigation*/
+/* Style rules for navigation */
 nav  {
   background-color: white;
-  padding: 1%;
+  padding: 2%;
   margin-bottom: 1%;
   margin-top: 20px;
+  text-align: center;
 }
 
 nav ul  {
@@ -105,7 +108,7 @@ nav li  {
 }
 
 nav li:first-child  {
-  border-top:none;
+  border-top: none;
 }
 
 nav li a  {
@@ -123,14 +126,19 @@ nav li a:hover {
   background-color: #f6eee4;
 }
 
-/* Style rules for main content*/
+/* Style rules for main content */
 main {
   display: block;
   background-color: white;
   margin: 2em auto;
 }
 
-/*Style rules for footer content*/
+.content-section {
+  display: block;
+  padding: 20px;
+}
+
+/* Style rules for footer content */
 footer  {
   font-size: 0.85em;
   background-color: #2a1f14;
@@ -141,9 +149,9 @@ footer  {
 }
 
 /*Media Query for Tablet Viewport*/
-@media screen and (min-width:620px), print {
+@media screen and (min-width:620px) {
 
-  /*Tablet Viewport: Show tab-desk class and hide mobile class*/
+  /* Tablet Viewport: Show tab-desk class and hide mobile class */
 
   .tab-desk {
     display: block;
@@ -152,6 +160,75 @@ footer  {
   .mobile {
     display: none;
   }
+
+  /* Tablet Viewport: Style rule for header content */
+  header {
+    position: static;
+  }
+
+  body {
+    background-color: navy;
+  }
+
+  main {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  /* Tablet Viewport: Style rules for navigation */
+  nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1 px solid black;
+  }
+
+  #hero {
+    max-width: 600px;
+    margin: 0 0 4% 20%;
+    justify-content: center;
+  }
+
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content-section {
+    width: 48%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .content-section img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .content-section p {
+    width: 50%;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .content-container:nth-child(even) {
+    background-color: #f0f0f0;
+   }
 
   .grid {
     display: grid;
@@ -163,6 +240,7 @@ footer  {
 
 /*Media Query for Desktop Viewport*/
 @media screen and (min-width: 1000px), print {
+
   /*Desktop Viewport: Show desktop class and hide mobile-tablet class*/
 
   .mobile-tablet {
@@ -193,8 +271,18 @@ footer  {
 
 /*Media Query for Large Desktop Viewports*/
 @media screen and (min-width: 1921px) {
+  header {
+    padding-top: 2em;
+  }
+
   body {
-    background: linear-gradient(to right, red, white)
+    background: linear-gradient(to right, red, white);
+  }
+
+  #hero {
+    max-width: 600px;
+    margin: 0 0 4% 30%;
+    justify-content: center;
   }
 
 }
@@ -209,6 +297,7 @@ footer  {
   .grid {
     display: grid;
     grid-template-columns: auto auto;
+    padding: 10px 0;
   }
 
   .aside {
