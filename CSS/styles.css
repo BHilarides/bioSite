@@ -68,6 +68,7 @@ img {
 .figcaption {
   padding: 2%;
   border-top: 4px solid #2a1f14;
+  margin-left: 4%;
 }
 
 /* Style rule for header content */
@@ -147,6 +148,27 @@ main {
   margin-bottom: 20px;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+/*.gallery img {
+  margin-left: 10%;
+  justify-content: center;
+}
+
+.gallery figcaption {
+margin-left: 4%;
+}
+Test */
 /* Style rules for footer content */
 footer  {
   font-size: 0.85em;
@@ -258,6 +280,15 @@ footer  {
     line-height: 1.5;
   }
 
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery img, .gallery figcaption {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
 }
 
 /*Media Query for Desktop Viewport*/
@@ -289,6 +320,10 @@ footer  {
     grid-gap: 10px;
   }
 
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 /*Media Query for Large Desktop Viewports*/
@@ -298,7 +333,7 @@ footer  {
   }
 
   body {
-    background: linear-gradient(to right, red, white);
+    background-color: linear-gradient(to right, red, white);
   }
 
   #hero {
