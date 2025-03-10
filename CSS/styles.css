@@ -70,6 +70,13 @@ aside p {
   margin-right: 3%;
 }
 
+/* Pseudo-Element not covered in textbook  */
+.bio-heading::before {
+  content: "🚢 ";
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
 .figure {
   border: 4px solid #2a1f14;
   box-shadow: 6px 6px 10px #c5a687;
