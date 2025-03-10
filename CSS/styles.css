@@ -138,7 +138,7 @@ nav li a  {
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  border-bottom: 1 px solid #ccc;
+  border-bottom: 1px solid #ccc;
   font-family: "Francois One", sans-serif;
 }
 
@@ -241,7 +241,7 @@ footer  {
   nav li {
     border-top: none;
     display: inline-block;
-    border-right: 1 px solid black;
+    border-right: 1px solid black;
   }
 
   #hero {
@@ -295,7 +295,6 @@ footer  {
 
   .grid {
     display: flex;
-    flex-wrap: flex;
     gap: 10px;
   }
 
